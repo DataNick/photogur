@@ -2,19 +2,12 @@ Rails.application.routes.draw do
 
   get 'pictures' => 'pictures#index'
 
- post 'pictures' => 'pictures#create' 
+  post 'pictures' => 'pictures#create' 
   get 'pictures/new' => 'pictures#new'
 
   get 'pictures/:id' => 'pictures#show', as: 'picture'
   
-
 end
-
-
-  # get '/pictures/' => 'pictures#picture0'
-  # get '/pictures/2' => 'pictures#picture1'
-  # get '/pictures/3' => 'pictures#picture2'
-
 
   
 
@@ -72,4 +65,4 @@ end
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+# end
