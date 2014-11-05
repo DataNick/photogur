@@ -18,4 +18,26 @@ class PicturesController < ApplicationController
 	  	}
 	  ]
 	end
+
+	def show
+      @pictures = [
+      	{
+      		:title  =>
+      		:artist =>
+      		:url    =>
+      	},
+      	{
+      		:title  =>
+      		:artist =>
+      		:url    =>
+      	},
+      	{
+      		:title  =>
+      		:artist =>
+      		:url    =>
+      	},
+
+      ]
+      @picture = @pictures[params[:id].to_i]
+	end
 end
