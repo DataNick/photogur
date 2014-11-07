@@ -13,3 +13,6 @@
     <li><%= picture.title %></li>
   <% end %>
 </ul>
+
+
+<%= Picture.created_before(1month.ago).count %>
