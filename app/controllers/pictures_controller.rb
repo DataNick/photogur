@@ -1,7 +1,9 @@
 class PicturesController < ApplicationController
 
  def index
-    @pictures = Picture.all
+    @most_recent_pictures = Picture.most_recent_five
+
+    # @pictures = Picture.all #.limit(5) .order(created_at: :desc).limit(5) .most_recent is a class method for query interface or .most_recent_five
      
   end
 
