@@ -14,5 +14,7 @@
   <% end %>
 </ul>
 
+<p>Pictures created  before 1 month ago</p>
+<%= Picture.created_before(1.month.ago).count %>
 
-<%= Picture.created_before(1month.ago).count %>
+
